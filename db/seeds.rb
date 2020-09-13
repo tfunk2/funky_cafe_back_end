@@ -12,7 +12,7 @@ Meal.destroy_all
 # Meals:
 
 flank_steak = Meal.create(
-    ingredients:[
+    ingredients: [
         "1 lb flank steak",
         "1 tsp salt",
         "1 tsp pepper",
@@ -23,7 +23,7 @@ flank_steak = Meal.create(
     name: "Flank Steak"
 )
 meatball_subs = Meal.create(
-    ingredients:[
+    ingredients: [
         "36 meatballs", 
         "4 hoagie buns",
         "1 cup Raos marinara ",
@@ -32,7 +32,7 @@ meatball_subs = Meal.create(
     name: "Meatball Subs"
 )
 cheesy_enchiladas = Meal.create(
-    ingredients:[
+    ingredients: [
         "1 can enchilada sauce", 
         "8 tbsp cream cheese", 
         "8 tortillas",
@@ -45,7 +45,7 @@ cheesy_enchiladas = Meal.create(
 )
 
 creamy_chicken_alfredo_pasta = Meal.create(
-    ingredients:[
+    ingredients: [
         "6 oz jovani pasta", 
         "1 cup broccoli", 
         "0.5 cup basil",
@@ -58,7 +58,7 @@ creamy_chicken_alfredo_pasta = Meal.create(
 )
 
 spicy_burger = Meal.create(
-    ingredients:[
+    ingredients: [
         "1 pound grass fed beef", 
         "1 egg", 
         "2 cloves garlic", 
@@ -75,7 +75,7 @@ spicy_burger = Meal.create(
 )
 
 chicken_sesame_stir_fry = Meal.create(
-    ingredients:[
+    ingredients: [
         "1 cup asian zing sauce", 
         "2 chicken breast", 
         "1 tsp avocado oil ",
@@ -91,7 +91,7 @@ chicken_sesame_stir_fry = Meal.create(
 )
 
 rosemary_chicken = Meal.create(
-    ingredients:[
+    ingredients: [
         "4 boneless chicken breast", 
         "0.25 cups avocado oil", 
         "1 tbsp minced rosemary",
@@ -107,9 +107,9 @@ rosemary_chicken = Meal.create(
 )
 
 cheesy_gordita_crunch = Meal.create(
-    ingredients:[
+    ingredients: [
         "2 lbs grass fed shredded beef", 
-        "1 packet taco bell seasoning", 
+        "1 packet Taco Bell seasoning", 
         "1 cup shredded Mexican cheese", 
         "1 bag shredded luttuce", 
         "20 hard taco shells", 
@@ -126,7 +126,7 @@ cheesy_gordita_crunch = Meal.create(
 )
 
 biscuits_and_gravy = Meal.create(
-    ingredients:[
+    ingredients: [
         "1 pound spicy sausage", 
         "0.3 cups flour", 
         "3 cups milk",
@@ -134,11 +134,11 @@ biscuits_and_gravy = Meal.create(
         "0.5 tsp salt",
         "2 cans biscuits"
     ],
-    name: "Biscuits and gravy"
+    name: "Biscuits and Gravy"
 )
 
 personal_pizzas = Meal.create(
-    ingredients:[
+    ingredients: [
         "4 pita breads", 
         "0.5 cups Rao's spaghetti sauce", 
         "1 cup mozzarella cheese",
@@ -150,22 +150,22 @@ personal_pizzas = Meal.create(
 )
 
 chicken_nachos = Meal.create(
-    ingredients:[
+    ingredients: [
         "1 rotisserie chicken", 
-        "1 bag On the Border resturant style tortilla chips", 
+        "1 bag On the Border chips", 
         "2 cups shredded cheese",
         "1 can refried beans",
         "1 bag shredded lettuce",
         "0.5 cups cherry tomatoes",
-        "0.25 cups taco bell hot sauce",
+        "0.25 cups Taco Bell hot sauce",
         "0.25 cups sour cream",
         "0.25 cups salsa"
     ],
     name: "Chicken Nachos"
 )
 
-pulled_pork_sandwhiches = Meal.create(
-    ingredients:[
+pulled_pork_sandwiches = Meal.create(
+    ingredients: [
         "4 hamburger buns", 
         "4 slices pepper jack cheese", 
         "2 lbs pork shoulder",
@@ -181,20 +181,20 @@ pulled_pork_sandwhiches = Meal.create(
 )
 
 breakfast_burritos = Meal.create(
-    ingredients:[
+    ingredients: [
         "1 lb spicy sausage", 
         "8 eggs", 
         "1 cup mexican cheese",
         "1 bag of hasbrowns with green peppers and onions",
         "8 tortillas",
         "0.5 cups of salsa",
-        "0.5 bottle taco bell hot sauce"
+        "0.5 bottle Taco Bell hot sauce"
     ],
     name: "Breakfast Burritos"
 )
 
 walnut_crusted_salmon = Meal.create(
-    ingredients:[
+    ingredients: [
         "0.25 cup walnuts", 
         "1 tsp oregeno", 
         "1 tsp basil",
@@ -205,13 +205,26 @@ walnut_crusted_salmon = Meal.create(
 )
 
 buffalo_wild_wings = Meal.create(
-    ingredients:[
+    ingredients: [
         "1 bag Tyson Anytizers", 
         "0.25 cups Asian Zing sauce", 
         "0.25 cups Honey BBQ sauce",
         "0.25 cups ranch"
     ],
     name: "Buffalo Wild Wings"
+)
+
+quesadillas = Meal.create(
+    ingredients: [
+        "8 tortillas",
+        "1.5 cups shredded mexican cheese",
+        "1 can refried beans",
+        "4 shredded chicken breasts",
+        "0.25 cups sour cream",
+        "0.25 cups Taco Bell hot sauce",
+        "0.25 cups shredded lettuce "
+    ],
+    name: "Quesadillas"
 )
 
 # Sides:
@@ -223,7 +236,79 @@ spicy_green_beans = Side.create(
         "2 cloves garlic",
         "1 tbsp salt",
         "0.5 tbsp red chili pepper flakes",
-        "1 tbsp avacado oil"
+        "1 tbsp avocado oil"
+    ],
+    name: "Spicy Green Beans"
+)
+
+spicy_green_beans2 = Side.create(
+    meal: spicy_burger,
+    ingredients: [
+        "1 lb fresh green beans",
+        "2 cloves garlic",
+        "1 tbsp salt",
+        "0.5 tbsp red chili pepper flakes",
+        "1 tbsp avocado oil"
+    ],
+    name: "Spicy Green Beans"
+)
+
+spicy_green_beans3 = Side.create(
+    meal: rosemary_chicken,
+    ingredients: [
+        "1 lb fresh green beans",
+        "2 cloves garlic",
+        "1 tbsp salt",
+        "0.5 tbsp red chili pepper flakes",
+        "1 tbsp avocado oil"
+    ],
+    name: "Spicy Green Beans"
+)
+
+spicy_green_beans4 = Side.create(
+    meal: meatball_subs,
+    ingredients: [
+        "1 lb fresh green beans",
+        "2 cloves garlic",
+        "1 tbsp salt",
+        "0.5 tbsp red chili pepper flakes",
+        "1 tbsp avocado oil"
+    ],
+    name: "Spicy Green Beans"
+)
+
+spicy_green_beans5 = Side.create(
+    meal: pulled_pork_sandwiches,
+    ingredients: [
+        "1 lb fresh green beans",
+        "2 cloves garlic",
+        "1 tbsp salt",
+        "0.5 tbsp red chili pepper flakes",
+        "1 tbsp avocado oil"
+    ],
+    name: "Spicy Green Beans"
+)
+
+spicy_green_beans6 = Side.create(
+    meal: walnut_crusted_salmon,
+    ingredients: [
+        "1 lb fresh green beans",
+        "2 cloves garlic",
+        "1 tbsp salt",
+        "0.5 tbsp red chili pepper flakes",
+        "1 tbsp avocado oil"
+    ],
+    name: "Spicy Green Beans"
+)
+
+spicy_green_beans7 = Side.create(
+    meal: buffalo_wild_wings,
+    ingredients: [
+        "1 lb fresh green beans",
+        "2 cloves garlic",
+        "1 tbsp salt",
+        "0.5 tbsp red chili pepper flakes",
+        "1 tbsp avocado oil"
     ],
     name: "Spicy Green Beans"
 )
@@ -232,7 +317,67 @@ seasoned_broccoli = Side.create(
     meal: flank_steak,
     ingredients: [
         "1 cup fresh broccoli",
-        "2 tbsp avacado oil",
+        "2 tbsp avocado oil",
+        "1 tbsp Mrs. Dash Southwest Seasoning"
+    ],
+    name: "Seasoned Broccoli"
+)
+
+seasoned_broccoli2 = Side.create(
+    meal: spicy_burger,
+    ingredients: [
+        "1 cup fresh broccoli",
+        "2 tbsp avocado oil",
+        "1 tbsp Mrs. Dash Southwest Seasoning"
+    ],
+    name: "Seasoned Broccoli"
+)
+
+seasoned_broccoli3 = Side.create(
+    meal: rosemary_chicken,
+    ingredients: [
+        "1 cup fresh broccoli",
+        "2 tbsp avocado oil",
+        "1 tbsp Mrs. Dash Southwest Seasoning"
+    ],
+    name: "Seasoned Broccoli"
+)
+
+seasoned_broccoli4 = Side.create(
+    meal: meatball_subs,
+    ingredients: [
+        "1 cup fresh broccoli",
+        "2 tbsp avocado oil",
+        "1 tbsp Mrs. Dash Southwest Seasoning"
+    ],
+    name: "Seasoned Broccoli"
+)
+
+seasoned_broccoli5 = Side.create(
+    meal: pulled_pork_sandwiches,
+    ingredients: [
+        "1 cup fresh broccoli",
+        "2 tbsp avocado oil",
+        "1 tbsp Mrs. Dash Southwest Seasoning"
+    ],
+    name: "Seasoned Broccoli"
+)
+
+seasoned_broccoli6 = Side.create(
+    meal: walnut_crusted_salmon,
+    ingredients: [
+        "1 cup fresh broccoli",
+        "2 tbsp avocado oil",
+        "1 tbsp Mrs. Dash Southwest Seasoning"
+    ],
+    name: "Seasoned Broccoli"
+)
+
+seasoned_broccoli7 = Side.create(
+    meal: buffalo_wild_wings,
+    ingredients: [
+        "1 cup fresh broccoli",
+        "2 tbsp avocado oil",
         "1 tbsp Mrs. Dash Southwest Seasoning"
     ],
     name: "Seasoned Broccoli"
@@ -241,11 +386,55 @@ seasoned_broccoli = Side.create(
 guacamole = Side.create(
     meal: cheesy_gordita_crunch,
     ingredients: [
-        "1 lb avacados",
-        "1 white onion",
-        "1 tomato",
+        "1 bag On the Border chips",
+        "2 avocados",
+        "0.25 cups cilantro",
+        "0.25 cups tomatoes",
         "1 bunch cilantro",
-        "1 tsp salt"
+        "0.25 cups red onion",
+        "1 lime"
+    ],
+    name: "Guacamole"
+)
+
+guacamole2 = Side.create(
+    meal: cheesy_enchiladas,
+    ingredients: [
+        "1 bag On the Border chips",
+        "2 avocados",
+        "0.25 cups cilantro",
+        "0.25 cups tomatoes",
+        "1 bunch cilantro",
+        "0.25 cups red onion",
+        "1 lime"
+    ],
+    name: "Guacamole"
+)
+
+guacamole3 = Side.create(
+    meal: chicken_nachos,
+    ingredients: [
+        "1 bag On the Border chips",
+        "2 avocados",
+        "0.25 cups cilantro",
+        "0.25 cups tomatoes",
+        "1 bunch cilantro",
+        "0.25 cups red onion",
+        "1 lime"
+    ],
+    name: "Guacamole"
+)
+
+guacamole4 = Side.create(
+    meal: quesadillas,
+    ingredients: [
+        "1 bag On the Border chips",
+        "2 avocados",
+        "0.25 cups cilantro",
+        "0.25 cups tomatoes",
+        "1 bunch cilantro",
+        "0.25 cups red onion",
+        "1 lime"
     ],
     name: "Guacamole"
 )
@@ -253,7 +442,170 @@ guacamole = Side.create(
 french_fries = Side.create(
     meal: meatball_subs,
     ingredients: [
-        "1 lb french fries"
+        "2 cups Ore-Ida french fries"
     ],
     name: "French Fries"
+)
+
+french_fries2 = Side.create(
+    meal: spicy_burger,
+    ingredients: [
+        "2 cups Ore-Ida french fries"
+    ],
+    name: "French Fries"
+)
+
+french_fries3 = Side.create(
+    meal: pulled_pork_sandwiches,
+    ingredients: [
+        "2 cups Ore-Ida french fries"
+    ],
+    name: "French Fries"
+)
+
+french_fries4 = Side.create(
+    meal: buffalo_wild_wings,
+    ingredients: [
+        "2 cups Ore-Ida french fries"
+    ],
+    name: "French Fries"
+)
+
+kaitlyns_salad = Side.create(
+    meal: creamy_chicken_alfredo_pasta,
+    ingredients: [
+        "2 cups of spring greens mix",
+        "0.5 cups tomatoes",
+        "0.25 cups cucumbers",
+        "0.5 cups crutons",
+        "2 tsps red onion",
+        "2 tsps of Primal Kitchen Ceasar"
+    ],
+    name: "Kaitlyn's Salad"
+)
+
+kaitlyns_salad2 = Side.create(
+    meal: rosemary_chicken,
+    ingredients: [
+        "2 cups of spring greens mix",
+        "0.5 cups tomatoes",
+        "0.25 cups cucumbers",
+        "0.5 cups crutons",
+        "2 tsps red onion",
+        "2 tsps of Primal Kitchen Ceasar"
+    ],
+    name: "Kaitlyn's Salad"
+)
+
+kaitlyns_salad3 = Side.create(
+    meal: personal_pizzas,
+    ingredients: [
+        "2 cups of spring greens mix",
+        "0.5 cups tomatoes",
+        "0.25 cups cucumbers",
+        "0.5 cups crutons",
+        "2 tsps red onion",
+        "2 tsps of Primal Kitchen Ceasar"
+    ],
+    name: "Kaitlyn's Salad"
+)
+
+tylers_salad = Side.create(
+    meal: creamy_chicken_alfredo_pasta,
+    ingredients: [
+        "2 cups of iceberg lettuce",
+        "0.25 cups shredded cheese",
+        "0.25 cups crutons",
+        "1 tsps red onion",
+        "2 tsps ranch dressing"
+    ],
+    name: "Tyler's Salad"
+)
+
+tylers_salad2 = Side.create(
+    meal: rosemary_chicken,
+    ingredients: [
+        "2 cups of iceberg lettuce",
+        "0.25 cups shredded cheese",
+        "0.25 cups crutons",
+        "1 tsps red onion",
+        "2 tsps ranch dressing"
+    ],
+    name: "Tyler's Salad"
+)
+
+tylers_salad3 = Side.create(
+    meal: personal_pizzas,
+    ingredients: [
+        "2 cups of iceberg lettuce",
+        "0.25 cups shredded cheese",
+        "0.25 cups crutons",
+        "1 tsps red onion",
+        "2 tsps ranch dressing"
+    ],
+    name: "Tyler's Salad"
+)
+
+garlic_bread = Side.create(
+    meal: creamy_chicken_alfredo_pasta,
+    ingredients: [
+        "1 loaf garlic bread"
+    ],
+    name: "Garlic Bread"
+)
+
+onion_rings = Side.create(
+    meal: spicy_burger,
+    ingredients: [
+        "2 cups frozen onion rings"
+    ],
+    name: "Onion Rings"
+)
+
+white_rice = Side.create(
+    meal: chicken_sesame_stir_fry,
+    ingredients: [
+        "2 cups Uncle Bens white rice"
+    ],
+    name: "White Rice"
+)
+
+brown_rice = Side.create(
+    meal: chicken_sesame_stir_fry,
+    ingredients: [
+        "2 cups Uncle Bens brown rice"
+    ],
+    name: "Brown Rice"
+)
+
+garlic_mashed_potatoes = Side.create(
+    meal: flank_steak,
+    ingredients: [
+        "1 tsp of avocado oil",
+        "1.25 lbs potatoes",
+        "0.25 cups milk",
+        "1 head garlic",
+        "2 tsps parsley",
+        "0.2 cups butter",
+        "0.2 cups heavy cream",
+        "1 tsp salt",
+        "1 tsp pepper"
+    ],
+    name: "Garlic Mashed Potatoes"
+)
+
+garlic_mashed_potatoes2 = Side.create(
+    meal: walnut_crusted_salmon,
+    ingredients: [
+        "1 tsp of avocado oil",
+        "1.25 lbs potatoes",
+        "0.25 cups milk",
+        "1 head garlic",
+        "2 tsps parsley",
+        "0.2 cups butter",
+        "0.2 cups heavy cream",
+        "1 tsp salt",
+        "1 tsp pepper"
+    ],
+    name: "Garlic Mashed Potatoes"
 )
