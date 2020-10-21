@@ -226,6 +226,108 @@ quesadillas = Meal.create(
     name: "Quesadillas"
 )
 
+pesto_chicken_tortellini_and_veggies = Meal.create(
+    ingredients: [
+        "2 tsp avocado oil",
+        "1 lb chicken",
+        "1 tsp salt",
+        "0.5 cup sun dried tomatoes",
+        "1 lb asparagus",
+        "0.25 cup basil pesto",
+        "1 cup cherry tomatoes",
+        "1 cup tortellini"
+    ],
+    name: "Pesto Chicken Tortellini and Veggies"
+)
+
+cilantro_lime_chicken = Meal.create(
+    ingredients: [
+        "1 lb chicken",
+        "0.25 cup avocado oil",
+        "0.25 cup cilantro",
+        "0.5 tsp garlic",
+        "1 tsp red pepper flakes",
+        "1 tsp jalapeno",
+        "1 lime",
+        "1 tsp salt",
+        "1 tsp pepper",
+    ],
+    name: "Cilantro Lime Chicken"
+)
+
+taco_salad = Meal.create(
+    ingredients: [
+        "0.5 lb cilantro lime chicken",
+        "4 cup romaine lettuce",
+        "0.5 cup tomatoes",
+        "1 tsp red onion",
+        "1 avocado",
+        "0.5 cup sour cream",
+        "0.5 cup unflavored greek yogurt",
+        "2 tsp taco seasoning",
+        "5 cup tortilla chips",
+        # ""
+    ],
+    name: "Taco Salad"
+)
+
+slow_cooker_cream_cheese_chicken_chili = Meal.create(
+    ingredients: [
+        "2 lb chicken ",
+        "1 can corn",
+        "1 can black beans",
+        "1 can diced tomatoes",
+        "1 can green chilies",
+        "2 cup chicken broth",
+        "1 packet ranch seasoning",
+        "1 tsp cumin",
+        "1 tsp chili powder",
+        "1 tsp onion powder",
+        "1 package cream cheese",
+        "1 cup shredded cheddar cheese",
+        "1 bag On the Border chips",
+    ],
+    name: "Cream Cheese Chicken Chili"
+)
+
+creamy_tuscan_garlic_tortellini_soup = Meal.create(
+    ingredients: [
+        "2 tsp butter",
+        "1 small white onion",
+        "3 cloves garlic",
+        "4 cup chicken broth",
+        "1 can diced tomatoes",
+        "1 can white beans",
+        "1 cup heavy cream",
+        "0.25 cup parmesan cheese",
+        "1 tsp italian seasoning",
+        "1 tsp salt",
+        "0.25 tsp pepper",
+        "1 rotisserie chicken",
+        "2 package tortellini",
+        "2 cup spinach",
+    ],
+    name: "Creamy Tuscan Garlic Tortellini Soup"
+)
+
+slow_cooker_jalapeno_popper_hicken_taquitos = Meal.create(
+    ingredients: [
+        "2 lb chicken breast",
+        "1 package cream cheese",
+        "0.33 cup pickled jalapenos",
+        "1 tsp garlic powder",
+        "1 tsp salt",
+        "1 tsp cumin",
+        "16 taco sized tortillas",
+        "1.5 cup shredded cheese",
+        "0.25 cup sour cream",
+        "0.25 chipotle ranch",
+        "0.25 Taco Bell hot sauce",
+        "0.25 salsa",
+    ],
+    name: "Jalapeno Popper Chicken Taquitos"
+)
+
 # Sides:
 
 spicy_green_beans = Side.create(
@@ -312,6 +414,18 @@ spicy_green_beans7 = Side.create(
     name: "Spicy Green Beans"
 )
 
+spicy_green_beans8 = Side.create(
+    meal: cilantro_lime_chicken,
+    ingredients: [
+        "1 lb fresh green beans",
+        "2 cloves garlic",
+        "1 Tbsp salt",
+        "0.5 Tbsp red chili pepper flakes",
+        "1 Tbsp avocado oil"
+    ],
+    name: "Spicy Green Beans"
+)
+
 seasoned_broccoli = Side.create(
     meal: flank_steak,
     ingredients: [
@@ -374,6 +488,16 @@ seasoned_broccoli6 = Side.create(
 
 seasoned_broccoli7 = Side.create(
     meal: buffalo_wild_wings,
+    ingredients: [
+        "1 cup fresh broccoli",
+        "2 Tbsp avocado oil",
+        "1 Tbsp Mrs. Dash Southwest seasoning"
+    ],
+    name: "Seasoned Broccoli"
+)
+
+seasoned_broccoli8 = Side.create(
+    meal: cilantro_lime_chicken,
     ingredients: [
         "1 cup fresh broccoli",
         "2 Tbsp avocado oil",
@@ -509,6 +633,19 @@ kaitlyns_salad3 = Side.create(
     name: "Kaitlyn's Salad"
 )
 
+kaitlyns_salad4 = Side.create(
+    meal: cilantro_lime_chicken,
+    ingredients: [
+        "2 cup spring greens mix",
+        "0.5 cup tomatoes",
+        "0.25 cup cucumbers",
+        "0.5 cup croutons",
+        "2 tsp red onion",
+        "2 tsp Primal Kitchen Ceasar"
+    ],
+    name: "Kaitlyn's Salad"
+)
+
 tylers_salad = Side.create(
     meal: creamy_chicken_alfredo_pasta,
     ingredients: [
@@ -535,6 +672,18 @@ tylers_salad2 = Side.create(
 
 tylers_salad3 = Side.create(
     meal: personal_pizzas,
+    ingredients: [
+        "2 cup iceberg lettuce",
+        "0.25 cup shredded cheese",
+        "0.25 cup croutons",
+        "1 tsp red onion",
+        "2 tsp ranch dressing"
+    ],
+    name: "Tyler's Salad"
+)
+
+tylers_salad4 = Side.create(
+    meal: cilantro_lime_chicken,
     ingredients: [
         "2 cup iceberg lettuce",
         "0.25 cup shredded cheese",
